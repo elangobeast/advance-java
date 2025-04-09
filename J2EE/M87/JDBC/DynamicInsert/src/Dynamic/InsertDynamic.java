@@ -21,10 +21,12 @@ public class InsertDynamic {
 		System.out.println("Enter Collection :");
 		double collection=s.nextDouble();
 		
+		Connection c = null;
+		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/movie_db","root","root");
+			c=DriverManager.getConnection("jdbc:mysql://localhost:3306/movie_db","root","root");
 			
 			PreparedStatement ps=c.prepareStatement("insert into movie values(?,?,?,?,?,?,?)");
 			
@@ -43,6 +45,14 @@ public class InsertDynamic {
 		} catch (ClassNotFoundException | SQLException e) {
 			
 			e.printStackTrace();
+		} finally {
+			try {
+				if (c!= null) {
+					c.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
 		
 	}

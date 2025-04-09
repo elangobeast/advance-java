@@ -19,7 +19,7 @@ public class Insert {
 		System.out.println("Enter rating6:");
 		double rating=s.nextDouble();
 		System.out.println("Enter description7 :");
-	    String description=s.next();
+	    String descrption=s.next();
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");

@@ -5,10 +5,13 @@ import java.sql.*;
 public class ExecuteMethod {
 // FetchAll
 	public static void main(String[] args) {
+		
+		Connection c = null;
+		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/audi_db", "root", "root");
+			c=DriverManager.getConnection("jdbc:mysql://localhost:3306/audi_db", "root", "root");
 			
 			Statement s=c.createStatement();
 			
@@ -35,6 +38,14 @@ public class ExecuteMethod {
 			
 			
 			e.printStackTrace();
+		}  finally {
+			try {
+				if (c!=null) {
+					c.close();
+				}
+			}  catch (SQLException e ) {
+				e.printStackTrace();
+			}
 		}
 	}
 
