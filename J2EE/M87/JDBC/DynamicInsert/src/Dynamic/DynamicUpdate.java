@@ -3,6 +3,7 @@ package Dynamic;
 import java.util.Scanner;
 import java.sql.*;
 
+
 public class DynamicUpdate {
   
 	public static void main(String[] args) {
@@ -18,10 +19,12 @@ public class DynamicUpdate {
         System.out.println("Enter collection");
         double collection = sc.nextDouble();
         
+        Connection c = null;
+        
         try {
         	Class.forName("com.mysql.cj.jdbc.Driver");
         	
-        	Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/movie_db","root","root");
+        	c = DriverManager.getConnection("jdbc:mysql://localhost:3306/movie_db","root","root");
         	
         	PreparedStatement ps = c.prepareStatement("update movie set language=?,collection=? where mid =?");
         	
@@ -35,7 +38,15 @@ public class DynamicUpdate {
         	
         } catch (ClassNotFoundException | SQLException e) {
         	e.printStackTrace();
-        }
+        }finally {
+			try {
+				if (c!= null) {
+					c.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
         
 
 }

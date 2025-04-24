@@ -12,12 +12,13 @@ public class DynamicDelete{
         System.out.println("Enter the mid id:");
         
         int id= sc.nextInt();
-       
+        
+        Connection c = null;
         
         try {
         	Class.forName("com.mysql.cj.jdbc.Driver");
         	
-        	Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/movie_db","root","root");
+        	c = DriverManager.getConnection("jdbc:mysql://localhost:3306/movie_db","root","root");
         	
         	PreparedStatement ps = c.prepareStatement("delete from movie  where mid =?");
         	
@@ -30,7 +31,15 @@ public class DynamicDelete{
         	
         } catch (ClassNotFoundException | SQLException e) {
         	e.printStackTrace();
-        }
+        }finally {
+			try {
+				if (c!= null) {
+					c.close();
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
         
 
 }
