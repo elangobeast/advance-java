@@ -2261,3 +2261,264 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact log4j:log4j:j
 2025-04-24 15:17:03,435 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-servlet_2.5_spec/1.1.2/geronimo-servlet_2.5_spec-1.1.2-sources.jar
 2025-04-24 15:17:03,507 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-servlet_2.5_spec/1.1.2/geronimo-servlet_2.5_spec-1.1.2-sources.jar
 2025-04-24 15:17:03,518 [Worker-78: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.geronimo.specs:geronimo-servlet_2.5_spec:1.1.2
+2025-04-26 11:27:57,475 [Worker-104: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-26 11:27:57,488 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-04-26 11:27:57,494 [Worker-104: Building] WARN  o.a.m.s.f.DefaultMavenResourcesFiltering - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2025-04-26 11:27:57,496 [Worker-104: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-04-26 11:27:57,837 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-04-26 11:27:57,929 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-04-26 11:27:57,929 [Worker-105: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of LifeCycleOfServlet
+2025-04-26 11:27:57,929 [Worker-105: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for LifeCycleOfServlet
+2025-04-26 11:27:58,307 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-04-26 11:27:58,312 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-04-26 11:27:58,313 [Worker-111: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of loginServlet
+2025-04-26 11:27:58,313 [Worker-111: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for loginServlet
+2025-04-26 11:27:58,552 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC\signinProject\signinProject-api\src\main\resources
+2025-04-26 11:27:58,557 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC\signinProject\signinProject-api\src\test\resources
+2025-04-26 11:27:58,787 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-04-26 11:27:58,795 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC\signinProject\signinProject-api-impl\src\test\resources
+2025-04-26 11:27:59,117 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-04-26 11:27:59,122 [Worker-78: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC\signinProject\signinProject-webapp\src\test\resources
+2025-04-26 11:27:59,136 [Worker-78: Building] WARN  Sisu - Error injecting: org.apache.maven.plugin.war.WarMojo
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: NoClassDefFoundError: Could not initialize class WebappStructureSerializer
+  at WarMojo.<init>(WarMojo.java:53)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                   "org.apache.maven.plugin.war.WarMojo"
+WebappStructureSerializer: "org.apache.maven.plugin.war.util.WebappStructureSerializer"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:50)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$2.get(Guice4.java:235)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:83)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:53)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:265)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:257)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:206)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:159)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:139)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.maven.plugin.war.util.WebappStructureSerializer
+	at org.apache.maven.plugin.war.AbstractWarMojo.<init>(AbstractWarMojo.java:324)
+	at org.apache.maven.plugin.war.WarMojo.<init>(WarMojo.java:53)
+	at org.apache.maven.plugin.war.WarMojo$$FastClassByGuice$$665561882.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugin.war.WarMojo$$FastClassByGuice$$665561882.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 common frames omitted
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Worker-96: Building"]
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:679)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:456)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:381)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:356)
+	at org.apache.maven.plugin.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	... 67 common frames omitted
+2025-04-26 11:30:18,959 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-04-26 11:30:18,968 [Worker-103: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-04-26 12:34:06,816 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomee/maven/tomee-webapp-archetype/10.0.1/tomee-webapp-archetype-10.0.1.pom
+2025-04-26 12:34:06,830 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomee/maven/tomee-webapp-archetype/10.0.1/tomee-webapp-archetype-10.0.1.pom
+2025-04-26 12:34:07,117 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomee/maven/maven/10.0.1/maven-10.0.1.pom
+2025-04-26 12:34:07,128 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomee/maven/maven/10.0.1/maven-10.0.1.pom
+2025-04-26 12:34:07,634 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomee/tomee-project/10.0.1/tomee-project-10.0.1.pom
+2025-04-26 12:34:07,667 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomee/tomee-project/10.0.1/tomee-project-10.0.1.pom
+2025-04-26 12:34:08,011 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomee/maven/tomee-webapp-archetype/10.0.1/tomee-webapp-archetype-10.0.1.jar
+2025-04-26 12:34:08,033 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomee/maven/tomee-webapp-archetype/10.0.1/tomee-webapp-archetype-10.0.1.jar
+2025-04-26 12:35:20,125 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409 [638])
+2025-04-26 12:35:20,130 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409
+2025-04-26 12:35:20,131 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\aopalliance-1.0.jar
+2025-04-26 12:35:20,132 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\guice-5.1.0.jar
+2025-04-26 12:35:20,133 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\httpclient-4.5.14.jar
+2025-04-26 12:35:20,134 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\httpcore-4.4.16.jar
+2025-04-26 12:35:20,135 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\jansi-2.4.1.jar
+2025-04-26 12:35:20,136 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\jcl-over-slf4j-1.7.36.jar
+2025-04-26 12:35:20,137 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-artifact-3.9.9.jar
+2025-04-26 12:35:20,138 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-builder-support-3.9.9.jar
+2025-04-26 12:35:20,138 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-compat-3.9.9.jar
+2025-04-26 12:35:20,139 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-core-3.9.9.jar
+2025-04-26 12:35:20,140 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-embedder-3.9.9.jar
+2025-04-26 12:35:20,141 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-model-3.9.9.jar
+2025-04-26 12:35:20,142 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-model-builder-3.9.9.jar
+2025-04-26 12:35:20,142 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-plugin-api-3.9.9.jar
+2025-04-26 12:35:20,144 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-repository-metadata-3.9.9.jar
+2025-04-26 12:35:20,144 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-api-1.9.22.jar
+2025-04-26 12:35:20,145 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-connector-basic-1.9.22.jar
+2025-04-26 12:35:20,146 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-impl-1.9.22.jar
+2025-04-26 12:35:20,147 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-named-locks-1.9.22.jar
+2025-04-26 12:35:20,147 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-provider-3.9.9.jar
+2025-04-26 12:35:20,149 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-spi-1.9.22.jar
+2025-04-26 12:35:20,150 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-file-1.9.22.jar
+2025-04-26 12:35:20,151 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-http-1.9.22.jar
+2025-04-26 12:35:20,152 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-wagon-1.9.22.jar
+2025-04-26 12:35:20,153 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-util-1.9.22.jar
+2025-04-26 12:35:20,153 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-settings-3.9.9.jar
+2025-04-26 12:35:20,154 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-settings-builder-3.9.9.jar
+2025-04-26 12:35:20,155 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-shared-utils-3.4.2.jar
+2025-04-26 12:35:20,156 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\org.eclipse.sisu.inject-0.9.0.M3.jar
+2025-04-26 12:35:20,157 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\org.eclipse.sisu.plexus-0.9.0.M3.jar
+2025-04-26 12:35:20,158 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-build-api-0.0.7.jar
+2025-04-26 12:35:20,158 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-build-api-1.2.0.jar
+2025-04-26 12:35:20,160 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-cipher-2.0.jar
+2025-04-26 12:35:20,161 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-classworlds-2.8.0.jar
+2025-04-26 12:35:20,161 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-component-annotations-2.1.0.jar
+2025-04-26 12:35:20,162 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-interpolation-1.27.jar
+2025-04-26 12:35:20,163 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-sec-dispatcher-2.0.jar
+2025-04-26 12:35:20,163 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-utils-3.5.1.jar
+2025-04-26 12:35:20,164 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-xml-3.0.1.jar
+2025-04-26 12:35:20,165 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-file-3.5.3.jar
+2025-04-26 12:35:20,165 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-http-3.5.3.jar
+2025-04-26 12:35:20,166 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-http-shared-3.5.3.jar
+2025-04-26 12:35:20,167 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-provider-api-3.5.3.jar
+2025-04-26 12:35:20,168 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.3.1.jre [16])
+2025-04-26 12:35:20,170 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\com.google.guava_33.3.1.jre.jar
+2025-04-26 12:35:20,170 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.16 [1005])
+2025-04-26 12:35:20,173 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\slf4j.api_2.0.16.jar
+2025-04-26 12:35:20,173 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [34])
+2025-04-26 12:35:20,174 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2025-04-26 12:35:20,174 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [29])
+2025-04-26 12:35:20,176 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\jakarta.annotation-api_1.3.5.jar
+2025-04-26 12:35:20,176 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.9.0 [75])
+2025-04-26 12:35:20,178 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.apache.commons.cli_1.9.0.jar
+2025-04-26 12:35:20,178 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2025-04-26 12:35:20,180 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-04-26 12:35:20,180 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [17])
+2025-04-26 12:35:20,181 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-04-26 12:35:20,186 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\Elango\AppData\Local\Temp\m2e-archetypeGenerator14142856523261519033":
+2025-04-26 12:35:20,186 [Worker-119: Launching mavenrun-62c2a0b1-94fb-4185-8484-920f7fdc50e2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -DarchetypeGroupId=org.apache.tomee.maven -DarchetypeArtifactId=tomee-webapp-archetype -DarchetypeVersion=10.0.1 -DgroupId=SerConfig -DartifactId=ServletConfig -Dversion=0.0.1-SNAPSHOT -Dpackage=SerConfig.ServletConfig -DoutputDirectory="C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC" -Dstyle.color=always -U archetype:generate
+2025-04-26 12:40:15,581 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-04-26 12:40:15,593 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-04-26 12:41:26,524 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-04-26 12:43:26,757 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409 [638])
+2025-04-26 12:43:26,763 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409
+2025-04-26 12:43:26,764 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\aopalliance-1.0.jar
+2025-04-26 12:43:26,764 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\guice-5.1.0.jar
+2025-04-26 12:43:26,764 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\httpclient-4.5.14.jar
+2025-04-26 12:43:26,765 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\httpcore-4.4.16.jar
+2025-04-26 12:43:26,765 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\jansi-2.4.1.jar
+2025-04-26 12:43:26,766 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\jcl-over-slf4j-1.7.36.jar
+2025-04-26 12:43:26,766 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-artifact-3.9.9.jar
+2025-04-26 12:43:26,767 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-builder-support-3.9.9.jar
+2025-04-26 12:43:26,767 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-compat-3.9.9.jar
+2025-04-26 12:43:26,767 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-core-3.9.9.jar
+2025-04-26 12:43:26,769 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-embedder-3.9.9.jar
+2025-04-26 12:43:26,770 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-model-3.9.9.jar
+2025-04-26 12:43:26,770 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-model-builder-3.9.9.jar
+2025-04-26 12:43:26,771 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-plugin-api-3.9.9.jar
+2025-04-26 12:43:26,771 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-repository-metadata-3.9.9.jar
+2025-04-26 12:43:26,772 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-api-1.9.22.jar
+2025-04-26 12:43:26,772 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-connector-basic-1.9.22.jar
+2025-04-26 12:43:26,773 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-impl-1.9.22.jar
+2025-04-26 12:43:26,773 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-named-locks-1.9.22.jar
+2025-04-26 12:43:26,774 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-provider-3.9.9.jar
+2025-04-26 12:43:26,774 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-spi-1.9.22.jar
+2025-04-26 12:43:26,775 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-file-1.9.22.jar
+2025-04-26 12:43:26,776 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-http-1.9.22.jar
+2025-04-26 12:43:26,776 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-transport-wagon-1.9.22.jar
+2025-04-26 12:43:26,777 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-resolver-util-1.9.22.jar
+2025-04-26 12:43:26,778 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-settings-3.9.9.jar
+2025-04-26 12:43:26,778 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-settings-builder-3.9.9.jar
+2025-04-26 12:43:26,778 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\maven-shared-utils-3.4.2.jar
+2025-04-26 12:43:26,779 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\org.eclipse.sisu.inject-0.9.0.M3.jar
+2025-04-26 12:43:26,780 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\org.eclipse.sisu.plexus-0.9.0.M3.jar
+2025-04-26 12:43:26,780 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-build-api-0.0.7.jar
+2025-04-26 12:43:26,781 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-build-api-1.2.0.jar
+2025-04-26 12:43:26,781 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-cipher-2.0.jar
+2025-04-26 12:43:26,782 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-classworlds-2.8.0.jar
+2025-04-26 12:43:26,782 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-component-annotations-2.1.0.jar
+2025-04-26 12:43:26,783 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-interpolation-1.27.jar
+2025-04-26 12:43:26,783 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-sec-dispatcher-2.0.jar
+2025-04-26 12:43:26,784 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-utils-3.5.1.jar
+2025-04-26 12:43:26,784 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\plexus-xml-3.0.1.jar
+2025-04-26 12:43:26,785 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-file-3.5.3.jar
+2025-04-26 12:43:26,785 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-http-3.5.3.jar
+2025-04-26 12:43:26,786 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-http-shared-3.5.3.jar
+2025-04-26 12:43:26,786 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.900.20240824-1409\jars\wagon-provider-api-3.5.3.jar
+2025-04-26 12:43:26,788 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.3.1.jre [16])
+2025-04-26 12:43:26,790 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\com.google.guava_33.3.1.jre.jar
+2025-04-26 12:43:26,790 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.16 [1005])
+2025-04-26 12:43:26,791 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\slf4j.api_2.0.16.jar
+2025-04-26 12:43:26,791 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.inject.jakarta.inject-api_1.0.5 [34])
+2025-04-26 12:43:26,793 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\jakarta.inject.jakarta.inject-api_1.0.5.jar
+2025-04-26 12:43:26,793 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=jakarta.annotation-api_1.3.5 [29])
+2025-04-26 12:43:26,794 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\jakarta.annotation-api_1.3.5.jar
+2025-04-26 12:43:26,794 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.9.0 [75])
+2025-04-26 12:43:26,796 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.apache.commons.cli_1.9.0.jar
+2025-04-26 12:43:26,796 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2025-04-26 12:43:26,798 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-04-26 12:43:26,798 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [17])
+2025-04-26 12:43:26,799 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Elango\.p2\pool\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-04-26 12:43:26,805 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\Elango\AppData\Local\Temp\m2e-archetypeGenerator8405993082812847932":
+2025-04-26 12:43:26,812 [Worker-4: Launching mavenrun-60e206bf-2989-48d3-aec2-17f0eb01e4bf] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.5 -DgroupId=SerConfig -DartifactId=ServletConfig -Dversion=0.0.1-SNAPSHOT -Dpackage=SerConfig.ServletConfig -DoutputDirectory="C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC" -Dstyle.color=always -U archetype:generate
+2025-04-26 12:44:04,045 [Worker-12: Creating maven-archetype-webapp] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC\ServletConfig\pom.xml
+2025-04-26 12:44:06,586 [Worker-12: Creating maven-archetype-webapp] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: SerConfig:ServletConfig:0.0.1-SNAPSHOT @ C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC\ServletConfig\pom.xml.
+2025-04-26 12:44:11,039 [Worker-12: Creating maven-archetype-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServletConfig/src/main/java
+2025-04-26 12:44:11,043 [Worker-12: Creating maven-archetype-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServletConfig/src/main/resources
+2025-04-26 12:44:11,044 [Worker-12: Creating maven-archetype-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ServletConfig/src/test/java
+2025-04-26 12:44:11,047 [Worker-12: Creating maven-archetype-webapp] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ServletConfig/src/test/resources
+2025-04-26 12:44:13,062 [Worker-12: Creating maven-archetype-webapp] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 9 sec
+2025-04-26 12:44:14,710 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC\ServletConfig\src\main\resources
+2025-04-26 12:44:14,722 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Elango\Desktop\Advanced Java\J2EE\M87\JDBC\ServletConfig\src\test\resources
